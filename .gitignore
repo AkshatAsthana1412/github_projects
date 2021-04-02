@@ -1,2 +1,5 @@
 *.csv
 *.pyc
+*.json
+*.jl
+*.html
