@@ -4,9 +4,15 @@
 # https://docs.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy.loader import ItemLoader
+from itemloaders.processors import Join
 
-
-class QuotesscrapeItem(scrapy.Item):
+class QuotesScrapeItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    author = scrapy.Field()
+    quote = scrapy.Field()
+    tags = scrapy.Field()
+
+class QuoteLoader(ItemLoader):
+    tags_out = Join('|')

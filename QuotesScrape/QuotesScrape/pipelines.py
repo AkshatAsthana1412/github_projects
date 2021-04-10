@@ -6,8 +6,20 @@
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
+import sqlite3 as lite
+import json
 
+class QuotesScrapePipeline:
 
-class QuotesscrapePipeline:
+    def open_spider(self, spider):
+        self.file = open('Results.jl', 'w', newline='')
+
+    def close_spider(self, spider):
+        self.file.close()
+        
     def process_item(self, item, spider):
+        adapter = ItemAdapter(item)
+        line = json.dumps(adapter.asdict()) + '\n'
+        self.file.write(line)
+        print('Item Scraped!')
         return item
