@@ -5,7 +5,7 @@
 
 import scrapy
 from scrapy.loader import ItemLoader
-from itemloaders.processors import Join
+from itemloaders.processors import Join, MapCompose, Compose
 
 class QuotesScrapeItem(scrapy.Item):
     # define the fields for your item here like:
@@ -15,4 +15,12 @@ class QuotesScrapeItem(scrapy.Item):
     tags = scrapy.Field()
 
 class QuoteLoader(ItemLoader):
-    tags_out = Join('|')
+    g = lambda x: bytes(x, 'utf-8')
+    f = lambda x: x.decode('utf-8')
+    author_in = MapCompose(g)
+    quote_in = MapCompose(g)
+    tags_in = MapCompose(g)
+    author_out = MapCompose(f)
+    quote_out = MapCompose(f)
+    tags_out = Compose(MapCompose(f), Join('|'))
+    # tags_out = Join('|')
