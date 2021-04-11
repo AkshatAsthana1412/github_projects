@@ -15,7 +15,6 @@ class QuotesScrapeItem(scrapy.Item):
     tags = scrapy.Field()
 
 class QuoteLoader(ItemLoader):
-<<<<<<< HEAD
     g = lambda x: bytes(x, 'utf-8')
     f = lambda x: x.decode('utf-8')
     author_in = MapCompose(g)
@@ -25,6 +24,3 @@ class QuoteLoader(ItemLoader):
     quote_out = MapCompose(f)
     tags_out = Compose(MapCompose(f), Join('|'))
     # tags_out = Join('|')
-=======
-    tags_out = Join('|')
->>>>>>> 61da4546e1d275915280585b0f156e65989ad8ae
