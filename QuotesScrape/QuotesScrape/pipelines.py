@@ -19,7 +19,6 @@ class QuotesScrapePipeline:
         
     def process_item(self, item, spider):
         adapter = ItemAdapter(item)
-        line = json.dumps(adapter.asdict(), ensure_ascii=True) + '\n'
+        line = json.dumps(adapter.asdict(), ensure_ascii=False) + '\n'
         self.file.write(line)
-        print('Item Scraped!')
         return item
