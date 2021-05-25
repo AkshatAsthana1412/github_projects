@@ -1,0 +1,500 @@
+INFO:scrapy.utils.log:Scrapy 2.4.1 started (bot: topfilms)
+INFO:scrapy.utils.log:Versions: lxml 4.6.2.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 22:45:29) [MSC v.1916 32 bit (Intel)], pyOpenSSL 20.0.1 (OpenSSL 1.1.1j  16 Feb 2021), cryptography 3.4.6, Platform Windows-10-10.0.19041-SP0
+DEBUG:scrapy.utils.log:Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO:scrapy.crawler:Overridden settings:
+{'BOT_NAME': 'topfilms',
+ 'NEWSPIDER_MODULE': 'topfilms.spiders',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['topfilms.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'}
+INFO:scrapy.extensions.telnet:Telnet Password: 6ed401f76c8f32d7
+INFO:scrapy.middleware:Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+INFO:scrapy.middleware:Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO:scrapy.middleware:Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO:scrapy.middleware:Enabled item pipelines:
+['topfilms.pipelines.StoreInDBPipeline']
+INFO:scrapy.core.engine:Spider opened
+INFO:scrapy.extensions.logstats:Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO:scrapy.extensions.telnet:Telnet console listening on 127.0.0.1:6023
+DEBUG:scrapy.core.engine:Crawled (404) <GET https://www.themoviedb.org/robots.txt> (referer: None)
+DEBUG:protego:Rule at line 24 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 40 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 42 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 44 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 46 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 48 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 50 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 52 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 54 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 56 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 58 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 60 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 62 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 64 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 66 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 68 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 70 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 72 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 74 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 76 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 78 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 80 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 82 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 84 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 86 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 88 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 90 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 92 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 94 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 96 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 98 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 100 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 102 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 104 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 106 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 108 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 110 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 112 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 114 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 116 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 118 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 120 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 122 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 124 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 126 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 128 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 130 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 132 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 134 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 136 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 138 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 140 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 142 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 144 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 146 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 148 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 150 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 152 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 154 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 156 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 158 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 160 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 162 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 164 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 166 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 168 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 170 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 172 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 174 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 176 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 178 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 180 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 190 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 191 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 195 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 196 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 205 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 206 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 207 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 218 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 358 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 376 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 488 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 504 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 565 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 566 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 574 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 575 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 576 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 577 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 578 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 581 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 593 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 594 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 595 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 596 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 598 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 599 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 600 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 601 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 608 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 609 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 610 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 611 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 612 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 615 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 639 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 640 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 650 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 651 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 657 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 659 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 660 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 661 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 662 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 663 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 666 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 667 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 669 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 672 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 673 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 674 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 676 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 677 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 687 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 688 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 689 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 690 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 691 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 692 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 693 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 694 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 695 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 696 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 697 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 699 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 700 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 703 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 706 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 778 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 779 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 780 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 781 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 782 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 783 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 784 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 785 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 786 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 787 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 788 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 789 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 792 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 793 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 796 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 797 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 799 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 800 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 810 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 814 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 862 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 909 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 910 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 911 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 912 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1177 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1178 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1179 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1180 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1181 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1187 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1188 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1189 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1190 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1191 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1192 without any user agent to enforce it on.
+DEBUG:protego:Rule at line 1193 without any user agent to enforce it on.
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie> (referer: None)
+INFO:spider1:A-X-L
+INFO:spider1:Junglee
+INFO:spider1:Paranormal Activity: The Marked Ones
+INFO:spider1:Hercules
+INFO:spider1:Mulan
+INFO:spider1:A Quiet Place
+INFO:spider1:The Viking War
+INFO:spider1:The Scientist
+INFO:spider1:Shrek 2
+INFO:spider1:Cinderella
+INFO:spider1:Red Shoes And The Seven Dwarfs
+INFO:spider1:Attack on Titan
+INFO:spider1:The Lion King
+INFO:spider1:Train to Busan
+INFO:spider1:The Hitman's Bodyguard
+INFO:spider1:Attack on Titan II: End of the World
+INFO:spider1:The Purge: Anarchy
+INFO:spider1:Taken
+INFO:spider1:Hacker
+INFO:spider1:Valerian and the City of a Thousand Planets
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/438590-a-x-l> from <GET https://www.themoviedb.org//movie/438590>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/11970-hercules> from <GET https://www.themoviedb.org//movie/11970>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/227348-paranormal-activity-the-marked-ones> from <GET https://www.themoviedb.org//movie/227348>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/447332-a-quiet-place> from <GET https://www.themoviedb.org//movie/447332>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/809-shrek-2> from <GET https://www.themoviedb.org//movie/809>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/560964-junglee> from <GET https://www.themoviedb.org//movie/560964>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/10674-mulan> from <GET https://www.themoviedb.org//movie/10674>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/584044-the-viking-war> from <GET https://www.themoviedb.org//movie/584044>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/715658-the-scientist> from <GET https://www.themoviedb.org//movie/715658>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/390043-the-hitman-s-bodyguard> from <GET https://www.themoviedb.org//movie/390043>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/8587-the-lion-king> from <GET https://www.themoviedb.org//movie/8587>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/295830-shingeki-no-kyojin> from <GET https://www.themoviedb.org//movie/295830>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/11224-cinderella> from <GET https://www.themoviedb.org//movie/11224>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/339964-valerian-and-the-city-of-a-thousand-planets> from <GET https://www.themoviedb.org//movie/339964>
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/486589-red-shoes-the-7-dwarfs> from <GET https://www.themoviedb.org//movie/486589>
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org//movie/396535> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/11970-hercules> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/438590-a-x-l> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:Martial law is declared when a mysterious viral outbreak pushes Korea into a state of emergency. Those on an express train to Busan, a city that has successfully fended off the viral outbreak, must fight for their own survival…
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org//movie/396535>
+{'overview': 'Martial law is declared when a mysterious viral outbreak pushes '
+             'Korea into a state of emergency. Those on an express train to '
+             'Busan, a city that has successfully fended off the viral '
+             'outbreak, must fight for their own survival…',
+ 'tags': ['Action', 'Horror', 'Thriller'],
+ 'title': 'Train to Busan',
+ 'user_score': '78.0'}
+INFO:spider1:Bestowed with superhuman strength, a young mortal named Hercules sets out to prove himself a hero in the eyes of his father, the great god Zeus. Along with his friends Pegasus, a flying horse, and Phil, a personal trainer, Hercules is tricked by the hilarious, hotheaded villain Hades, who's plotting to take over Mount Olympus!
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/11970-hercules>
+{'overview': 'Bestowed with superhuman strength, a young mortal named Hercules '
+             'sets out to prove himself a hero in the eyes of his father, the '
+             'great god Zeus. Along with his friends Pegasus, a flying horse, '
+             'and Phil, a personal trainer, Hercules is tricked by the '
+             "hilarious, hotheaded villain Hades, who's plotting to take over "
+             'Mount Olympus!',
+ 'tags': ['Animation', 'Family', 'Fantasy', 'Adventure', 'Comedy', 'Romance'],
+ 'title': 'Hercules',
+ 'user_score': '75.0'}
+INFO:spider1:The life of a teenage boy is forever altered by a chance encounter with cutting edge military technology.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/438590-a-x-l>
+{'overview': 'The life of a teenage boy is forever altered by a chance '
+             'encounter with cutting edge military technology.',
+ 'tags': ['Science Fiction', 'Action', 'Adventure', 'Family'],
+ 'title': 'A-X-L',
+ 'user_score': '63.0'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/447332-a-quiet-place> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/10674-mulan> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/390043-the-hitman-s-bodyguard> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:A family is forced to live in silence while hiding from creatures that hunt by sound.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/447332-a-quiet-place>
+{'overview': 'A family is forced to live in silence while hiding from '
+             'creatures that hunt by sound.',
+ 'tags': ['Horror', 'Drama', 'Science Fiction'],
+ 'title': 'A Quiet Place',
+ 'user_score': '74.0'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/560964-junglee> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/584044-the-viking-war> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:A tomboyish girl disguises herself as a young man so she can fight with the Imperial Chinese Army against the invading Huns. With help from wise-cracking dragon Mushu, Mulan just might save her country -- and win the heart of handsome Captain Li Shang.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/10674-mulan>
+{'overview': 'A tomboyish girl disguises herself as a young man so she can '
+             'fight with the Imperial Chinese Army against the invading Huns. '
+             'With help from wise-cracking dragon Mushu, Mulan just might save '
+             'her country -- and win the heart of handsome Captain Li Shang.',
+ 'tags': ['Animation', 'Family', 'Adventure'],
+ 'title': 'Mulan',
+ 'user_score': '79.0'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/227348-paranormal-activity-the-marked-ones> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:The world's top bodyguard gets a new client, a hit man who must testify at the International Court of Justice. They must put their differences aside and work together to make it to the trial on time.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/390043-the-hitman-s-bodyguard>
+{'overview': "The world's top bodyguard gets a new client, a hit man who must "
+             'testify at the International Court of Justice. They must put '
+             'their differences aside and work together to make it to the '
+             'trial on time.',
+ 'tags': ['Thriller', 'Comedy', 'Crime', 'Action'],
+ 'title': "The Hitman's Bodyguard",
+ 'user_score': '68.0'}
+INFO:spider1:A vet returns home to his father's elephant reserve where he encounters and fights an international poacher's racket.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/560964-junglee>
+{'overview': "A vet returns home to his father's elephant reserve where he "
+             "encounters and fights an international poacher's racket.",
+ 'tags': ['Action', 'Adventure'],
+ 'title': 'Junglee',
+ 'user_score': '66.0'}
+INFO:spider1:Ingrid and her siblings are on the run from the Beserkers who have begun invading the villages, taking over, savagely using the residents on a game where they vs a Beserker, and if they win, they get to survive - only, no one ever wins. The siblings are trying to escape the Beserkers after they violently murdered and took over their town. However, the Beserkers are on their trail, and want to put them in the game.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/584044-the-viking-war>
+{'overview': 'Ingrid and her siblings are on the run from the Beserkers who '
+             'have begun invading the villages, taking over, savagely using '
+             'the residents on a game where they vs a Beserker, and if they '
+             'win, they get to survive - only, no one ever wins. The siblings '
+             'are trying to escape the Beserkers after they violently murdered '
+             'and took over their town. However, the Beserkers are on their '
+             'trail, and want to put them in the game.',
+ 'tags': ['History', 'Fantasy', 'Drama'],
+ 'title': 'The Viking War',
+ 'user_score': '55.0'}
+INFO:spider1:Seventeen-year-old Jesse has been hearing terrifying sounds coming from his neighbor’s apartment, but when he turns on his camera and sets out to uncover their source, he encounters an ancient evil that won’t rest until it’s claimed his very soul.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/227348-paranormal-activity-the-marked-ones>
+{'overview': 'Seventeen-year-old Jesse has been hearing terrifying sounds '
+             'coming from his neighbor’s apartment, but when he turns on his '
+             'camera and sets out to uncover their source, he encounters an '
+             'ancient evil that won’t rest until it’s claimed his very soul.',
+ 'tags': ['Horror', 'Thriller'],
+ 'title': 'Paranormal Activity: The Marked Ones',
+ 'user_score': '54.0'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/295830-shingeki-no-kyojin> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:100 years ago, titans suddenly appeared on Earth. Soon, human civilization veered on collapse due to the titans. Humans then built a giant wall to defend themselves. Within the giant walls, humans lived in peace, but, 100 years later, the giant wall is broken.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/295830-shingeki-no-kyojin>
+{'overview': '100 years ago, titans suddenly appeared on Earth. Soon, human '
+             'civilization veered on collapse due to the titans. Humans then '
+             'built a giant wall to defend themselves. Within the giant walls, '
+             'humans lived in peace, but, 100 years later, the giant wall is '
+             'broken.',
+ 'tags': ['Horror', 'Fantasy', 'Drama', 'Action', 'Science Fiction'],
+ 'title': 'Attack on Titan',
+ 'user_score': '57.0'}
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/545330-28-03-2019> from <GET https://www.themoviedb.org//movie/545330>
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/486589-red-shoes-the-7-dwarfs> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/339964-valerian-and-the-city-of-a-thousand-planets> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/11224-cinderella> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/8681-taken> from <GET https://www.themoviedb.org//movie/8681>
+INFO:spider1:Princes who have been turned into Dwarfs seek the red shoes of a lady in order to break the spell, although it will not be easy.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/486589-red-shoes-the-7-dwarfs>
+{'overview': 'Princes who have been turned into Dwarfs seek the red shoes of a '
+             'lady in order to break the spell, although it will not be easy.',
+ 'tags': ['Animation', 'Romance', 'Family'],
+ 'title': 'Red Shoes And The Seven Dwarfs',
+ 'user_score': '77.0'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/715658-the-scientist> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/8587-the-lion-king> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:In the 28th century, Valerian and Laureline are special operatives charged with keeping order throughout the human territories. On assignment from the Minister of Defense, the two undertake a mission to Alpha, an ever-expanding metropolis where species from across the universe have converged over centuries to share knowledge, intelligence, and cultures. At the center of Alpha is a mysterious dark force which threatens the peaceful existence of the City of a Thousand Planets, and Valerian and Laureline must race to identify the menace and safeguard not just Alpha, but the future of the universe.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/339964-valerian-and-the-city-of-a-thousand-planets>
+{'overview': 'In the 28th century, Valerian and Laureline are special '
+             'operatives charged with keeping order throughout the human '
+             'territories. On assignment from the Minister of Defense, the two '
+             'undertake a mission to Alpha, an ever-expanding metropolis where '
+             'species from across the universe have converged over centuries '
+             'to share knowledge, intelligence, and cultures. At the center of '
+             'Alpha is a mysterious dark force which threatens the peaceful '
+             'existence of the City of a Thousand Planets, and Valerian and '
+             'Laureline must race to identify the menace and safeguard not '
+             'just Alpha, but the future of the universe.',
+ 'tags': ['Adventure', 'Science Fiction', 'Action'],
+ 'title': 'Valerian and the City of a Thousand Planets',
+ 'user_score': '66.0'}
+INFO:spider1:Cinderella has faith her dreams of a better life will come true. With help from her loyal mice friends and a wave of her Fairy Godmother's wand, Cinderella's rags are magically turned into a glorious gown and off she goes to the Royal Ball. But when the clock strikes midnight, the spell is broken, leaving a single glass slipper... the only key to the ultimate fairy-tale ending!
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/11224-cinderella>
+{'overview': 'Cinderella has faith her dreams of a better life will come true. '
+             'With help from her loyal mice friends and a wave of her Fairy '
+             "Godmother's wand, Cinderella's rags are magically turned into a "
+             'glorious gown and off she goes to the Royal Ball. But when the '
+             'clock strikes midnight, the spell is broken, leaving a single '
+             'glass slipper... the only key to the ultimate fairy-tale ending!',
+ 'tags': ['Family', 'Fantasy', 'Animation', 'Romance'],
+ 'title': 'Cinderella',
+ 'user_score': '70.0'}
+INFO:spider1:An unconventional scientist, struggling to care for his terminally-ill wife, embarks on a journey to develop a cure for her. However, his methods of treatment and tampering with human DNA, could lead to the extinction of humanity.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/715658-the-scientist>
+{'overview': 'An unconventional scientist, struggling to care for his '
+             'terminally-ill wife, embarks on a journey to develop a cure for '
+             'her. However, his methods of treatment and tampering with human '
+             'DNA, could lead to the extinction of humanity.',
+ 'tags': ['Horror'],
+ 'title': 'The Scientist',
+ 'user_score': '65.0'}
+INFO:spider1:A young lion prince is cast out of his pride by his cruel uncle, who claims he killed his father. While the uncle rules with an iron paw, the prince grows up beyond the Savannah, living by a philosophy: No worries for the rest of your days. But when his past comes to haunt him, the young prince must decide his fate: Will he remain an outcast or face his demons and become what he needs to be?
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/8587-the-lion-king>
+{'overview': 'A young lion prince is cast out of his pride by his cruel uncle, '
+             'who claims he killed his father. While the uncle rules with an '
+             'iron paw, the prince grows up beyond the Savannah, living by a '
+             'philosophy: No worries for the rest of your days. But when his '
+             'past comes to haunt him, the young prince must decide his fate: '
+             'Will he remain an outcast or face his demons and become what he '
+             'needs to be?',
+ 'tags': ['Family', 'Animation', 'Drama'],
+ 'title': 'The Lion King',
+ 'user_score': '83.0'}
+DEBUG:scrapy.downloadermiddlewares.redirect:Redirecting (301) to <GET https://www.themoviedb.org/movie/238636-the-purge-anarchy> from <GET https://www.themoviedb.org//movie/238636>
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org//movie/340382> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/809-shrek-2> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:Eren leaves to restore a break in the wall destroyed by a Titan. He comes under attack by the Titans and is cornered. Shikishima comes to his aid. The titans never stops attacking.  Eren is now injured and tries to protect Armin, but is swallowed by a titan. A Titan with black hair appears and begins to expel the other titans.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org//movie/340382>
+{'overview': 'Eren leaves to restore a break in the wall destroyed by a Titan. '
+             'He comes under attack by the Titans and is cornered. Shikishima '
+             'comes to his aid. The titans never stops attacking.  Eren is now '
+             'injured and tries to protect Armin, but is swallowed by a titan. '
+             'A Titan with black hair appears and begins to expel the other '
+             'titans.',
+ 'tags': ['Horror', 'Science Fiction', 'Action', 'Fantasy', 'Drama'],
+ 'title': 'Attack on Titan II: End of the World',
+ 'user_score': '57.0'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/545330-28-03-2019> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:Shrek, Fiona and Donkey set off to Far, Far Away to meet Fiona's mother and father. But not everyone is happy. Shrek and the King find it hard to get along, and there's tension in the marriage. The fairy godmother discovers that Shrek has married Fiona instead of her Son Prince Charming and sets about destroying their marriage.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/809-shrek-2>
+{'overview': "Shrek, Fiona and Donkey set off to Far, Far Away to meet Fiona's "
+             'mother and father. But not everyone is happy. Shrek and the King '
+             "find it hard to get along, and there's tension in the marriage. "
+             'The fairy godmother discovers that Shrek has married Fiona '
+             'instead of her Son Prince Charming and sets about destroying '
+             'their marriage.',
+ 'tags': ['Animation', 'Family', 'Comedy', 'Fantasy', 'Adventure'],
+ 'title': 'Shrek 2',
+ 'user_score': '71.0'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/8681-taken> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:13-year-old Benjamin discovers that his mother didn’t die in an accident as he was led to believe. The trail leads to high-ranking officials in the Danish Secret Service. "Trust no one!", he is told.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/545330-28-03-2019>
+{'overview': '13-year-old Benjamin discovers that his mother didn’t die in an '
+             'accident as he was led to believe. The trail leads to '
+             'high-ranking officials in the Danish Secret Service. "Trust no '
+             'one!", he is told.',
+ 'tags': ['Action', 'Family'],
+ 'title': 'Hacker',
+ 'user_score': '67.0'}
+INFO:spider1:While vacationing with a friend in Paris, an American girl is kidnapped by a gang of human traffickers intent on selling her into forced prostitution. Working against the clock, her ex-spy father must pull out all the stops to save her. But with his best years possibly behind him, the job may be more than he can handle.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/8681-taken>
+{'overview': 'While vacationing with a friend in Paris, an American girl is '
+             'kidnapped by a gang of human traffickers intent on selling her '
+             'into forced prostitution. Working against the clock, her ex-spy '
+             'father must pull out all the stops to save her. But with his '
+             'best years possibly behind him, the job may be more than he can '
+             'handle.',
+ 'tags': ['Action', 'Thriller'],
+ 'title': 'Taken',
+ 'user_score': '74.0'}
+DEBUG:scrapy.core.engine:Crawled (200) <GET https://www.themoviedb.org/movie/238636-the-purge-anarchy> (referer: https://www.themoviedb.org/remote/panel?panel=free_scroller&group=movie)
+INFO:spider1:One night per year, the government sanctions a 12-hour period in which citizens can commit any crime they wish -- including murder -- without fear of punishment or imprisonment. Leo, a sergeant who lost his son, plans a vigilante mission of revenge during the mayhem. However, instead of a death-dealing avenger, he becomes the unexpected protector of four innocent strangers who desperately need his help if they are to survive the night.
+DEBUG:scrapy.core.scraper:Scraped from <200 https://www.themoviedb.org/movie/238636-the-purge-anarchy>
+{'overview': 'One night per year, the government sanctions a 12-hour period in '
+             'which citizens can commit any crime they wish -- including '
+             'murder -- without fear of punishment or imprisonment. Leo, a '
+             'sergeant who lost his son, plans a vigilante mission of revenge '
+             'during the mayhem. However, instead of a death-dealing avenger, '
+             'he becomes the unexpected protector of four innocent strangers '
+             'who desperately need his help if they are to survive the night.',
+ 'tags': ['Horror', 'Thriller'],
+ 'title': 'The Purge: Anarchy',
+ 'user_score': '67.0'}
+INFO:scrapy.core.engine:Closing spider (finished)
+INFO:scrapy.statscollectors:Dumping Scrapy stats:
+{'downloader/request_bytes': 33470,
+ 'downloader/request_count': 40,
+ 'downloader/request_method_count/GET': 40,
+ 'downloader/response_bytes': 502579,
+ 'downloader/response_count': 40,
+ 'downloader/response_status_count/200': 21,
+ 'downloader/response_status_count/301': 18,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 10.762491,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 5, 18, 16, 20, 45, 598801),
+ 'item_scraped_count': 20,
+ 'log_count/DEBUG': 236,
+ 'log_count/INFO': 50,
+ 'request_depth_max': 1,
+ 'response_received_count': 22,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 39,
+ 'scheduler/dequeued/memory': 39,
+ 'scheduler/enqueued': 39,
+ 'scheduler/enqueued/memory': 39,
+ 'start_time': datetime.datetime(2021, 5, 18, 16, 20, 34, 836310)}
+INFO:scrapy.core.engine:Spider closed (finished)
