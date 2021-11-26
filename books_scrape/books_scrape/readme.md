@@ -1,6 +1,6 @@
 ## Books Scraper
 
-Scrapes book information from the website: [title](http://books.toscrape.com/)
+Scrapes book information from the website: [http://books.toscrape.com/]
 
 The scraped content is structured in the following way:
 - title
