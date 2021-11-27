@@ -1,5 +1,5 @@
 import scrapy
-
+from scrapy_splash import SplashRequest
 class QuotesSpider(scrapy.Spider):
     name = 'quotes_spider'
     count = 0
@@ -13,7 +13,9 @@ class QuotesSpider(scrapy.Spider):
             'http://quotes.toscrape.com/page/1/',
         ]
         for url in urls:
-            yield scrapy.Request(url=url, callback=self.parse)
+            # yield scrapy.Request(url=url, callback=self.parse)
+            yield SplashRequest(url=url, callback=self.parse)
+
     
     def parse(self, response):
         quotes = response.css('div.quote')
@@ -29,7 +31,7 @@ class QuotesSpider(scrapy.Spider):
         if self.count < 5 and next_page is not None: #scrape first 5 pages only
             next_page = response.urljoin(next_page)
             yield scrapy.Request(next_page, callback=self.parse)
-            response.follow()
+            # response.follow()
         
         #we can also use the following for scraping all pages:
         # yield from response.follow_all(css='li.next a', callback=self.parse)
